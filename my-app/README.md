@@ -1,21 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# WiT Awards Nomination Platform
 
-First, run the development server:
+This is the Women in Technology (WiT) Awards Nomination Platform, a web application built with Next.js to facilitate the nomination process for various technology awards.
 
-```bash
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your local machine:
+- Node.js (v18.18.0 or later)
+- npm (v9.0.0 or later)
+
+## Installation
+
+To get the project up and running on your local machine, follow these steps:
+
+1. Clone the repository to your local machine:
+
+git clone [https://github.com/your-username/wit-awards.git](https://github.com/your-username/wit-awards.git)
+
+
+2. Navigate to the project directory:
+
+cd WiT Personal 
+cd my-app
+
+
+3. Install the project dependencies:
+
+npm install
+
+4. Create a `.env.local` file in the root directory and add any necessary environment variables.
+
+5. Start the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open your browser and visit `http://localhost:3000` to view the application.
 
+## Available Scripts
+
+In the project directory, you can run:
+
+- `npm run dev`: Runs the app in development mode.
+- `npm run build`: Builds the app for production.
+- `npm start`: Runs the built app in production mode.
+- `npm run lint`: Runs the linter to check for code style issues.
+
+
+## Notes
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
@@ -28,9 +59,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
