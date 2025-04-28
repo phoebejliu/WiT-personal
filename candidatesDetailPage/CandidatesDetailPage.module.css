@@ -1,0 +1,209 @@
+/* CandidatesDetailPage.module.css */
+
+/* Main page container */
+.pageWrapper {
+    width: 100%;
+    background-color: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Inner page container with white background */
+  .pageContainer {
+    width: 100%;
+    position: relative;
+    background: white;
+    overflow: hidden;
+  }
+  
+  /* Horizontal line separator */
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: #D7D8D6;
+    margin: 20px 0;
+  }
+  
+  /* Main content area with padding */
+  .mainContent {
+    padding: 0 100px;
+    margin-top: 80px;
+    box-sizing: border-box;
+  }
+  
+  /* Title section at the top */
+  .titleArea {
+    margin-bottom: 40px;
+  }
+  
+  .pageTitle {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-bottom: 16px;
+    font-size: 30px;
+  }
+  
+  .pageSubtitle {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  /* Two-column layout container */
+  .twoColumnLayout {
+    display: flex;
+    gap: 40px;
+  }
+  
+  /* Left column with scrollable content */
+  .contentColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  
+  /* Individual content box */
+  .contentBox {
+    padding: 30px 25px 20px;
+    background: white;
+    border: 1px solid #545454;
+  }
+  
+  .boxContent {
+    color: black;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  
+  /* Style for collapsed content (shows only 3 lines) */
+  .collapsed {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+  
+  /* Toggle icon container */
+  .toggleIcon {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    cursor: pointer;
+  }
+  
+  /* Rotated icon for expanded state */
+  .rotated {
+    transform: rotate(180deg);
+  }
+  
+  .toggleIconBox {
+    width: 16px;
+    height: 16px;
+    background: #A0A0A0;
+  }
+  
+  /* Right sidebar */
+  .sidebar {
+    width: 400px;
+  }
+  
+  /* Category criteria box in sidebar */
+  .categoryBox {
+    width: 100%;
+    padding: 40px 30px;
+    background: #EDEDED;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+  }
+  
+  .criteriaTitle {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .criteriaContent {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  /* Red primary button */
+  .primaryButton {
+    width: 100%;
+    height: 50px;
+    background: #DB0811; /* HSBC red color from ThemeContext */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  /* Gray secondary button */
+  .secondaryButton {
+    width: 100%;
+    height: 50px;
+    background: #D7D8D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .buttonTextWhite {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .buttonTextBlack {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+  }
+  
+  /* Responsive design for different screen sizes */
+  @media (max-width: 1200px) {
+    .mainContent {
+      padding: 0 50px;
+    }
+    
+    .sidebar {
+      width: 350px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .twoColumnLayout {
+      flex-direction: column;
+    }
+    
+    .sidebar {
+      width: 100%;
+    }
+    
+    .contentColumn {
+      max-height: none;
+      overflow-y: visible;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mainContent {
+      padding: 0 20px;
+    }
+  }
